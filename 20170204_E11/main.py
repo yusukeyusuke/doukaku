@@ -108,6 +108,6 @@ TESTCASES = '''/*0*/ test( "50:6,3", "1" );
 
 if __name__ == '__main__':
     for q in TESTCASES.splitlines():
-        qmain = q.split('"')[1]
-        qans = q.split('"')[3]
-        test(qmain, qans)
+        testArg1 = q.split('"')[1]
+        testArg2 = q.split('"')[3]
+        test(testArg1, testArg2)
